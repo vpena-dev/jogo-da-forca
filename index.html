@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Julee&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- TOP -->
+      <h1>Jogo da Forca</h1>
+      <img src="./img/forca0.png" alt="forca0" id="image" />
+      <p><strong>Dica: </strong>Animal</p>
+      <div id="word-display"></div>
+      <input
+        type="text"
+        id="input-letter"
+        placeholder="Chute uma letra!"
+        maxlength="1"
+      />
+      <button id="btn-kick" onclick="kickLetter()">Chutar</button>
+
+      <!-- BOTTOM -->
+      <h2>Letras Chutadas:</h2>
+      <div id="kicked-letters"></div>
+      <div id="message">Você ganhou!</div>
+      <br />
+      <button id="btn-restart" onclick="startGame()">Recomeçar</button>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
